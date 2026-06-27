@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://themahaprinciple.com/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://themahaprinciple.com/cover.jpg</image:loc>
+      <image:title>The Maha Principle — The Architecture of Human Flourishing</image:title>
+      <image:caption>Book cover: a golden tree of life whose roots grow into architecture, on black.</image:caption>
+    </image:image>
+  </url>
+</urlset>
