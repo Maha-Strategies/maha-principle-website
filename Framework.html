@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ============ PRIMARY META ============ -->
+<title>The Maha Framework — A Research Program | Mayone Maha Rajan</title>
+<meta name="description" content="An evolving body of work investigating one question across scales: what governs the organization of complex adaptive systems? The books, research, and tools of the Maha Framework by Mayone Maha Rajan.">
+<link rel="canonical" href="https://themahaprinciple.com/framework.html">
+<meta name="author" content="Mayone Maha Rajan">
+<meta name="theme-color" content="#0E0C0A">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<!-- ============ OPEN GRAPH ============ -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Maha Framework — A Research Program">
+<meta property="og:description" content="One question pursued across scales: what governs the organization of complex adaptive systems? The books, research, and tools of an evolving body of work.">
+<meta property="og:url" content="https://themahaprinciple.com/framework.html">
+<meta property="og:site_name" content="The Maha Principle">
+<meta property="og:image" content="https://themahaprinciple.com/cover.jpg">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="2560">
+<meta property="og:image:type" content="image/jpeg">
+
+<!-- ============ FONTS ============ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<!-- ============ FAVICON / MANIFEST ============ -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/markdown" href="/llms.txt" title="LLM-readable summary">
+
+<!-- ============ JSON-LD: CREATIVE WORK SERIES ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWorkSeries",
+  "name": "The Maha Framework",
+  "url": "https://themahaprinciple.com/framework.html",
+  "description": "An evolving body of work investigating what governs the organization of complex adaptive systems, examined across scales from civilization to cognition.",
+  "author": {
+    "@type": "Person",
+    "name": "Mayone Maha Rajan",
+    "url": "https://www.mayonemaharajan.com/"
+  },
+  "hasPart": [
+    {
+      "@type": "Book",
+      "name": "The Maha Principle: The Architecture of Human Flourishing",
+      "url": "https://themahaprinciple.com/",
+      "datePublished": "2026-07-10"
+    },
+    {
+      "@type": "Book",
+      "name": "The Orbital Mind: The Astrophysics of the Self",
+      "creativeWorkStatus": "In development"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Maha OS",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Android, iOS"
+    }
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --ink:#0E0C0A;--ink-2:#161310;--gold:#C6A15B;--gold-bright:#E4C683;
+    --evergreen:#1F3A30;--bone:#EDE6D6;--bone-dim:#9A9384;--rule:#2A2620;
+    --maxw:1100px;
+    --serif:"EB Garamond","Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,"SF Mono","Cascadia Mono","Roboto Mono",Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    background:var(--ink);color:var(--bone);
+    font-family:var(--sans);font-size:17px;line-height:1.65;
+    font-feature-settings:"kern" 1,"liga" 1;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+    background:
+      radial-gradient(120% 80% at 50% -10%, rgba(198,161,91,.06), transparent 55%),
+      radial-gradient(100% 60% at 50% 110%, rgba(31,58,48,.10), transparent 60%);
+  }
+  body::after{
+    content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.035;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    mix-blend-mode:overlay;
+  }
+  .wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:clamp(20px,5vw,64px)}
+  a{color:inherit;text-decoration:none}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.1;letter-spacing:0}
+  h1{letter-spacing:-.005em}
+
+  .label{
+    font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--gold);display:inline-flex;align-items:center;gap:14px;
+  }
+  .label::before{content:"";width:34px;height:1px;background:var(--gold);opacity:.6}
+
+  .skip{position:absolute;left:-9999px;top:0;background:var(--gold);color:var(--ink);padding:10px 16px;z-index:100}
+  .skip:focus{left:8px;top:8px}
+
+  /* header */
+  .site-head{position:sticky;top:0;z-index:50;background:rgba(14,12,10,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+  .site-head .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{font-family:var(--serif);font-size:18px;letter-spacing:.01em}
+  .brand b{color:var(--gold);font-weight:600}
+  .nav-links{display:flex;gap:28px;font-size:14px;color:var(--bone-dim)}
+  .nav-links a:hover{color:var(--bone)}
+  .nav-cta{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);padding:8px 14px;border-radius:2px}
+  .nav-cta:hover{background:var(--gold);color:var(--ink)}
+  @media(max-width:760px){.nav-links{display:none}}
+
+  /* hero */
+  .phero{border-bottom:1px solid var(--rule);padding-block:clamp(56px,9vw,104px)}
+  .phero .label{margin-bottom:28px}
+  .phero h1{font-size:clamp(38px,6vw,68px);margin-bottom:26px;max-width:18ch}
+  .question{
+    font-family:var(--serif);font-style:italic;color:var(--gold);
+    font-size:clamp(21px,3.2vw,32px);line-height:1.32;max-width:24ch;margin-bottom:30px;
+  }
+  .phero .lede{color:var(--bone);font-size:clamp(17px,2.1vw,19px);max-width:60ch;line-height:1.6;margin-bottom:14px}
+  .phero .lede.dim{color:var(--bone-dim)}
+
+  /* the two-axis spine */
+  .axes{border-bottom:1px solid var(--rule);padding-block:clamp(48px,7vw,84px)}
+  .axes .label{margin-bottom:40px}
+  .axis-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+  .axis{background:var(--ink);padding:clamp(28px,4vw,44px)}
+  .axis .dir{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--bone-dim);margin-bottom:18px}
+  .axis h3{font-size:clamp(22px,2.6vw,27px);margin-bottom:8px}
+  .axis .work{font-family:var(--serif);font-style:italic;color:var(--gold);font-size:17px;margin-bottom:14px}
+  .axis p{color:var(--bone-dim);font-size:15.5px;line-height:1.6}
+  @media(max-width:680px){.axis-grid{grid-template-columns:1fr}}
+
+  /* program map — grouped ledger */
+  .program{padding-block:clamp(48px,7vw,84px)}
+  .program .label{margin-bottom:14px}
+  .program-head h2{font-size:clamp(28px,4vw,42px);margin-bottom:14px}
+  .program-head p{color:var(--bone-dim);max-width:58ch;margin-bottom:48px}
+
+  .group{margin-bottom:46px}
+  .group-title{
+    font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--gold);padding-bottom:14px;margin-bottom:6px;border-bottom:1px solid var(--rule);
+  }
+  .item{
+    display:grid;grid-template-columns:1fr auto;gap:20px;align-items:start;
+    padding-block:24px;border-bottom:1px solid var(--rule);
+  }
+  .item-main h3{font-size:21px;margin-bottom:6px}
+  .item-main h3 a{border-bottom:1px solid transparent;transition:border-color .15s}
+  .item-main h3 a:hover{border-color:var(--gold)}
+  .item-main .kind{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--bone-dim);margin-bottom:10px}
+  .item-main p{color:var(--bone-dim);font-size:15.5px;line-height:1.6;max-width:62ch}
+  /* status pill */
+  .status{
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+    padding:5px 11px;border-radius:2px;white-space:nowrap;border:1px solid;
+  }
+  .s-live{color:#7FAE9B;border-color:#33564a;background:rgba(31,58,48,.25)}
+  .s-soon{color:var(--gold);border-color:#5a4a2c;background:rgba(198,161,91,.08)}
+  .s-dev{color:var(--bone-dim);border-color:var(--rule)}
+  .s-plan{color:var(--bone-dim);border-color:var(--rule);opacity:.8}
+  @media(max-width:560px){.item{grid-template-columns:1fr}.status{justify-self:start}}
+
+  /* closing honesty note */
+  .note{border-top:1px solid var(--rule);padding-block:clamp(40px,6vw,72px)}
+  .note .inner{border:1px solid var(--rule);border-radius:3px;background:linear-gradient(180deg,var(--ink-2),var(--ink));padding:clamp(26px,4vw,40px);max-width:none}
+  .note .label{margin-bottom:18px}
+  .note p{color:var(--bone-dim);font-size:16px;line-height:1.7;max-width:64ch;margin-bottom:12px}
+  .note p:last-child{margin-bottom:0}
+  .note a.inline{color:var(--gold);border-bottom:1px solid rgba(198,161,91,.4)}
+  .note a.inline:hover{border-color:var(--gold)}
+
+  /* footer */
+  footer{border-top:1px solid var(--rule);padding-block:48px;font-size:14px;color:var(--bone-dim)}
+  .foot-cols{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:center}
+  .foot-links{display:flex;gap:24px;flex-wrap:wrap}
+  .foot-links a:hover{color:var(--bone)}
+  .foot-brand{font-family:var(--serif);color:var(--bone)}
+
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><b>The Maha Principle</b></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/#diagnosis">The Diagnosis</a>
+      <a href="/#framework">The Framework</a>
+      <a href="/#author">The Author</a>
+      <a href="/framework.html">The Program</a>
+    </nav>
+    <a class="nav-cta" href="https://www.amazon.com/dp/B0H62WLMT5" rel="noopener">Pre-order</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="phero">
+    <div class="wrap">
+      <p class="label">The Research Program</p>
+      <h1>The Maha Framework</h1>
+      <p class="question">One question, pursued across every scale at which it appears:&nbsp; what governs the organization of complex adaptive systems?</p>
+      <p class="lede">Physics asks what governs matter. Biology asks what governs life. This body of work asks what governs <em>organization itself</em> — the recurring grammar by which complex systems, from civilizations to cells to minds, hold their form against decay.</p>
+      <p class="lede dim">What follows is not a catalogue of products. It is a map of an inquiry in progress: where it began, where it has reached, and where it is going next.</p>
+    </div>
+  </section>
+
+  <!-- THE TWO AXES -->
+  <section class="axes">
+    <div class="wrap">
+      <p class="label">The Spine · Two Directions, One Question</p>
+      <div class="axis-grid">
+        <div class="axis">
+          <p class="dir">Civilization → Inward</p>
+          <h3>The Maha Principle</h3>
+          <p class="work">The Architecture of Human Flourishing</p>
+          <p>Begins with the visible crises of modern life — metabolic, attentional, relational — and works inward to the coupled failure beneath them. How complex human systems flourish, stagnate, and renew.</p>
+        </div>
+        <div class="axis">
+          <p class="dir">Cognition → Outward</p>
+          <h3>The Orbital Mind</h3>
+          <p class="work">The Astrophysics of the Self</p>
+          <p>Begins with the oldest stable system we know intimately — the solar system — and works outward to the mind, using orbital organization as a descriptive map for cognition. How a single intelligence generates and coordinates systems in the first place.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAM MAP -->
+  <section class="program">
+    <div class="wrap">
+      <div class="program-head">
+        <p class="label">The Work</p>
+        <h2>An Evolving Body of Work</h2>
+        <p>The framework expresses itself in several forms — books that argue it, research that tests it, and tools that apply it. Each is marked with its honest current status.</p>
+      </div>
+
+      <!-- PUBLISHED -->
+      <div class="group">
+        <p class="group-title">Books</p>
+        <div class="item">
+          <div class="item-main">
+            <h3><a href="https://www.amazon.com/dp/B0H62WLMT5" rel="noopener">The Maha Principle</a></h3>
+            <p class="kind">Nonfiction · The Architecture of Human Flourishing</p>
+            <p>The foundational text. Argues that metabolic decline, attentional capture, and social disconnection are one coupled failure, and lays out the M.A.H.A. framework for rebuilding from the inside out.</p>
+          </div>
+          <span class="status s-soon">Releases Jul 10 2026 · Pre-order</span>
+        </div>
+        <div class="item">
+          <div class="item-main">
+            <h3>The Orbital Mind</h3>
+            <p class="kind">Nonfiction · The Astrophysics of the Self</p>
+            <p>The companion volume. Maps the organization of the solar system onto the architecture of cognition — a descriptive framework, grounded in dissipative-systems theory and neuroscience, for understanding the self.</p>
+          </div>
+          <span class="status s-dev">In development</span>
+        </div>
+        <div class="item">
+          <div class="item-main">
+            <h3>The Synthetic Self</h3>
+            <p class="kind">Nonfiction · On Artificial Intelligence</p>
+            <p>Extends the inquiry to machine intelligence: the argument that AI is a compression of the human record, and that the alignment problem is, at root, a human problem reflected back at us.</p>
+          </div>
+          <span class="status s-plan">Planned</span>
+        </div>
+      </div>
+
+      <!-- APPLIED -->
+      <div class="group">
+        <p class="group-title">Applied</p>
+        <div class="item">
+          <div class="item-main">
+            <h3>Maha OS</h3>
+            <p class="kind">Mobile application · iOS &amp; Android</p>
+            <p>The framework operationalized as a daily practice — turning the book's diagnosis into a usable set of habits for metabolic and attentional health.</p>
+          </div>
+          <span class="status s-live">Live</span>
+        </div>
+      </div>
+
+      <!-- RESEARCH -->
+      <div class="group">
+        <p class="group-title">Research</p>
+        <div class="item">
+          <div class="item-main">
+            <h3>The Maha Framework — Whitepaper</h3>
+            <p class="kind">Foundational document</p>
+            <p>The formal statement of the framework's core claims and method: a falsification-first, radically transparent approach to the organization of complex adaptive systems.</p>
+          </div>
+          <span class="status s-dev">In development</span>
+        </div>
+        <div class="item">
+          <div class="item-main">
+            <h3>Supporting Papers</h3>
+            <p class="kind">Research series</p>
+            <p>A growing set of working papers and studies that test, extend, and stress the framework's claims across domains — published under the same zero-fabrication discipline as the books.</p>
+          </div>
+          <span class="status s-dev">Ongoing</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HONESTY NOTE -->
+  <section class="note">
+    <div class="wrap">
+      <div class="inner">
+        <p class="label">A Note on Method</p>
+        <p>This is an active research program, not a finished system. Items marked <em>in development</em> or <em>planned</em> are exactly that — work underway or intended, listed openly rather than implied.</p>
+        <p>The models offered across this work are conceptual tools, not final answers. They are meant to be examined, refined, criticized, and extended. If they prove useful, it will not be because they end inquiry, but because they help organize it. That has been the purpose from the beginning.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-cols">
+    <span class="foot-brand">The Maha Framework</span>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="/">The Book</a>
+      <a href="https://www.mayonemaharajan.com/" rel="noopener">The Author</a>
+      <a href="https://www.amazon.com/dp/B0H62WLMT5" rel="noopener">Pre-order</a>
+    </nav>
+    <span>&copy; 2026 Mayone Maha Rajan</span>
+  </div>
+</footer>
+
+</body>
+</html>

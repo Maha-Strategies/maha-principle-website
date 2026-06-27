@@ -35,12 +35,21 @@ The book leads with mechanism and lets meaning follow. Where claims are establis
 ## Links
 
 - Book site: https://themahaprinciple.com/
+- Research program (full body of work): https://themahaprinciple.com/framework.html
 - Pre-order (Amazon Kindle): https://www.amazon.com/dp/B0H62WLMT5
 - Author site: https://www.mayonemaharajan.com/
 
-## Related works by the same author
+## The wider body of work — the Maha Framework
 
-- *The Orbital Mind: The Astrophysics of the Self* — a companion work mapping solar-system bodies onto cognitive and neurobiological systems as a descriptive framework for understanding the mind.
+The Maha Principle is the foundational book of a broader research program called the Maha Framework, which investigates a single question across scales: what governs the organization of complex adaptive systems? The program spans two complementary directions — from civilization inward (The Maha Principle) and from cognition outward (The Orbital Mind) — and expresses itself in three forms: books that argue the framework, research that tests it, and tools that apply it. A complete, status-marked map of the program is maintained at https://themahaprinciple.com/framework.html
+
+Components of the program include:
+
+- The Maha Principle (book) — foundational text; releases July 10, 2026.
+- The Orbital Mind: The Astrophysics of the Self (book) — companion volume mapping solar-system organization onto cognition; in development.
+- The Synthetic Self (book) — extends the inquiry to artificial intelligence as a compression of the human record; planned.
+- Maha OS (mobile app, iOS and Android) — the framework operationalized as daily practice; live.
+- The Maha Framework whitepaper and supporting research papers — formal statements and tests of the framework's claims; in development and ongoing.
 
 ## Usage note
 
