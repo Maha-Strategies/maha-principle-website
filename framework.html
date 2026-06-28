@@ -1,848 +1,465 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-
-<meta charset="utf-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
-<!-- ============ PRIMARY META ============ -->
-
-<title>The Maha Framework — A Research Program | Mayone Maha Rajan</title>
-
-<meta name="description" content="An evolving body of work investigating one question across scales: what governs the organization of complex adaptive systems? The books, research, and tools of the Maha Framework by Mayone Maha Rajan.">
-
-<link rel="canonical" href="https://themahaprinciple.com/framework.html">
-
-<meta name="author" content="Mayone Maha Rajan">
-
-<meta name="theme-color" content="#0E0C0A">
-
-<meta name="robots" content="index, follow, max-image-preview:large">
-
-
-
-<!-- ============ OPEN GRAPH ============ -->
-
-<meta property="og:type" content="website">
-
-<meta property="og:title" content="The Maha Framework — A Research Program">
-
-<meta property="og:description" content="One question pursued across scales: what governs the organization of complex adaptive systems? The books, research, and tools of an evolving body of work.">
-
-<meta property="og:url" content="https://themahaprinciple.com/framework.html">
-
-<meta property="og:site_name" content="The Maha Principle">
-
-<meta property="og:image" content="https://themahaprinciple.com/cover.jpg">
-
-<meta property="og:image:width" content="1600">
-
-<meta property="og:image:height" content="2560">
-
-<meta property="og:image:type" content="image/jpeg">
-
-
-
-<!-- ============ FONTS ============ -->
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap">
-
-
-
-<!-- ============ FAVICON / MANIFEST ============ -->
-
-<link rel="icon" href="/favicon.ico" sizes="any">
-
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-<link rel="manifest" href="/site.webmanifest">
-
-<link rel="alternate" type="text/markdown" href="/llms.txt" title="LLM-readable summary">
-
-
-
-<!-- ============ JSON-LD: CREATIVE WORK SERIES ============ -->
-
-<script type="application/ld+json">
-
-{
-
-  "@context": "https://schema.org",
-
-  "@type": "CreativeWorkSeries",
-
-  "name": "The Maha Framework",
-
-  "url": "https://themahaprinciple.com/framework.html",
-
-  "description": "An evolving body of work investigating what governs the organization of complex adaptive systems, examined across scales from civilization to cognition.",
-
-  "author": {
-
-    "@type": "Person",
-
-    "name": "Mayone Maha Rajan",
-
-    "url": "https://www.mayonemaharajan.com/"
-
-  },
-
-  "hasPart": [
-
-    {
-
-      "@type": "Book",
-
-      "name": "The Maha Principle: The Architecture of Human Flourishing",
-
-      "url": "https://themahaprinciple.com/",
-
-      "datePublished": "2026-07-10"
-
-    },
-
-    {
-
-      "@type": "Book",
-
-      "name": "The Orbital Mind: The Astrophysics of the Self",
-
-      "creativeWorkStatus": "In development"
-
-    },
-
-    {
-
-      "@type": "Book",
-
-      "name": "The Synthetic Self",
-
-      "creativeWorkStatus": "Planned"
-
-    },
-
-    {
-
-      "@type": "Book",
-
-      "name": "The Omega Point",
-
-      "creativeWorkStatus": "Planned"
-
-    },
-
-    {
-
-      "@type": "Book",
-
-      "name": "The Cosmic Recursion",
-
-      "creativeWorkStatus": "Planned"
-
-    },
-
-    {
-
-      "@type": "Book",
-
-      "name": "The Mayon Paradox",
-
-      "creativeWorkStatus": "Planned"
-
-    },
-
-    {
-
-      "@type": "SoftwareApplication",
-
-      "name": "Maha OS",
-
-      "applicationCategory": "HealthApplication",
-
-      "operatingSystem": "Android, iOS"
-
-    }
-
-  ]
-
-}
-
-</script>
-
-
-
-<style>
-
-  :root{
-
-    --ink:#0E0C0A;--ink-2:#161310;--gold:#C6A15B;--gold-bright:#E4C683;
-
-    --evergreen:#1F3A30;--bone:#EDE6D6;--bone-dim:#9A9384;--rule:#2A2620;
-
-    --maxw:1100px;
-
-    --serif:"EB Garamond","Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
-
-    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-
-    --mono:"IBM Plex Mono",ui-monospace,"SF Mono","Cascadia Mono","Roboto Mono",Menlo,Consolas,monospace;
-
-  }
-
-  *{box-sizing:border-box;margin:0;padding:0}
-
-  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-
-  body{
-
-    background:var(--ink);color:var(--bone);
-
-    font-family:var(--sans);font-size:17px;line-height:1.65;
-
-    font-feature-settings:"kern" 1,"liga" 1;
-
-    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
-
-  }
-
-  body::before{
-
-    content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
-
-    background:
-
-      radial-gradient(120% 80% at 50% -10%, rgba(198,161,91,.06), transparent 55%),
-
-      radial-gradient(100% 60% at 50% 110%, rgba(31,58,48,.10), transparent 60%);
-
-  }
-
-  body::after{
-
-    content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.035;
-
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-
-    mix-blend-mode:overlay;
-
-  }
-
-  .wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:clamp(20px,5vw,64px)}
-
-  a{color:inherit;text-decoration:none}
-
-  h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.1;letter-spacing:0}
-
-  h1{letter-spacing:-.005em}
-
-
-
-  .label{
-
-    font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;
-
-    color:var(--gold);display:inline-flex;align-items:center;gap:14px;
-
-  }
-
-  .label::before{content:"";width:34px;height:1px;background:var(--gold);opacity:.6}
-
-
-
-  .skip{position:absolute;left:-9999px;top:0;background:var(--gold);color:var(--ink);padding:10px 16px;z-index:100}
-
-  .skip:focus{left:8px;top:8px}
-
-
-
-  /* header */
-
-  .site-head{position:sticky;top:0;z-index:50;background:rgba(14,12,10,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
-
-  .site-head .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-
-  .brand{font-family:var(--serif);font-size:18px;letter-spacing:.01em}
-
-  .brand b{color:var(--gold);font-weight:600}
-
-  .nav-links{display:flex;gap:28px;font-size:14px;color:var(--bone-dim)}
-
-  .nav-links a:hover{color:var(--bone)}
-
-  .nav-cta{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);padding:8px 14px;border-radius:2px}
-
-  .nav-cta:hover{background:var(--gold);color:var(--ink)}
-
-  @media(max-width:760px){.nav-links{display:none}}
-
-
-
-  /* hero */
-
-  .phero{border-bottom:1px solid var(--rule);padding-block:clamp(56px,9vw,104px)}
-
-  .phero .label{margin-bottom:28px}
-
-  .phero h1{font-size:clamp(38px,6vw,68px);margin-bottom:26px;max-width:18ch}
-
-  .question{
-
-    font-family:var(--serif);font-style:italic;color:var(--gold);
-
-    font-size:clamp(21px,3.2vw,32px);line-height:1.32;max-width:24ch;margin-bottom:30px;
-
-  }
-
-  .phero .lede{color:var(--bone);font-size:clamp(17px,2.1vw,19px);max-width:60ch;line-height:1.6;margin-bottom:14px}
-
-  .phero .lede.dim{color:var(--bone-dim)}
-
-
-
-  /* the two-axis spine */
-
-  .axes{border-bottom:1px solid var(--rule);padding-block:clamp(48px,7vw,84px)}
-
-  .axes .label{margin-bottom:40px}
-
-  .axis-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);border:1px solid var(--rule)}
-
-  .axis{background:var(--ink);padding:clamp(28px,4vw,44px)}
-
-  .axis .dir{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--bone-dim);margin-bottom:18px}
-
-  .axis h3{font-size:clamp(22px,2.6vw,27px);margin-bottom:8px}
-
-  .axis .work{font-family:var(--serif);font-style:italic;color:var(--gold);font-size:17px;margin-bottom:14px}
-
-  .axis p{color:var(--bone-dim);font-size:15.5px;line-height:1.6}
-
-  @media(max-width:680px){.axis-grid{grid-template-columns:1fr}}
-
-
-
-  /* program map — grouped ledger */
-
-  .program{padding-block:clamp(48px,7vw,84px)}
-
-  .program .label{margin-bottom:14px}
-
-  .program-head h2{font-size:clamp(28px,4vw,42px);margin-bottom:14px}
-
-  .program-head p{color:var(--bone-dim);max-width:58ch;margin-bottom:48px}
-
-
-
-  .group{margin-bottom:46px}
-
-  .group-title{
-
-    font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;
-
-    color:var(--gold);padding-bottom:14px;margin-bottom:6px;border-bottom:1px solid var(--rule);
-
-  }
-
-  .item{
-
-    display:grid;grid-template-columns:1fr auto;gap:20px;align-items:start;
-
-    padding-block:24px;border-bottom:1px solid var(--rule);
-
-  }
-
-  .item-main h3{font-size:21px;margin-bottom:6px}
-
-  .item-main h3 a{border-bottom:1px solid transparent;transition:border-color .15s}
-
-  .item-main h3 a:hover{border-color:var(--gold)}
-
-  .item-main .kind{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--bone-dim);margin-bottom:10px}
-
-  .item-main p{color:var(--bone-dim);font-size:15.5px;line-height:1.6;max-width:62ch}
-
-  /* status pill */
-
-  .status{
-
-    font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
-
-    padding:5px 11px;border-radius:2px;white-space:nowrap;border:1px solid;
-
-  }
-
-  .s-live{color:#7FAE9B;border-color:#33564a;background:rgba(31,58,48,.25)}
-
-  .s-soon{color:var(--gold);border-color:#5a4a2c;background:rgba(198,161,91,.08)}
-
-  .s-dev{color:var(--bone-dim);border-color:var(--rule)}
-
-  .s-plan{color:var(--bone-dim);border-color:var(--rule);opacity:.8}
-
-  .s-concept{color:var(--bone-dim);border-color:var(--rule);opacity:.6;font-style:normal}
-
-  /* phase sub-header within the books group */
-
-  .phase{margin:38px 0 4px}
-
-  .phase:first-of-type{margin-top:8px}
-
-  .phase-tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);opacity:.85}
-
-  .phase h4{font-family:var(--serif);font-size:19px;font-weight:600;color:var(--bone);margin:6px 0 4px}
-
-  .phase p{color:var(--bone-dim);font-size:14.5px;line-height:1.55;max-width:64ch}
-
-  @media(max-width:560px){.item{grid-template-columns:1fr}.status{justify-self:start}}
-
-
-
-  /* closing honesty note */
-
-  .note{border-top:1px solid var(--rule);padding-block:clamp(40px,6vw,72px)}
-
-  .note .inner{border:1px solid var(--rule);border-radius:3px;background:linear-gradient(180deg,var(--ink-2),var(--ink));padding:clamp(26px,4vw,40px);max-width:none}
-
-  .note .label{margin-bottom:18px}
-
-  .note p{color:var(--bone-dim);font-size:16px;line-height:1.7;max-width:64ch;margin-bottom:12px}
-
-  .note p:last-child{margin-bottom:0}
-
-  .note a.inline{color:var(--gold);border-bottom:1px solid rgba(198,161,91,.4)}
-
-  .note a.inline:hover{border-color:var(--gold)}
-
-
-
-  /* footer */
-
-  footer{border-top:1px solid var(--rule);padding-block:48px;font-size:14px;color:var(--bone-dim)}
-
-  .foot-cols{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:center}
-
-  .foot-links{display:flex;gap:24px;flex-wrap:wrap}
-
-  .foot-links a:hover{color:var(--bone)}
-
-  .foot-brand{font-family:var(--serif);color:var(--bone)}
-
-
-
-  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
-
-</style>
-
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Author" content="Mayone Maha Rajan">
+  <meta name="Description" content="An evolving body of work investigating one question across scales: what governs the organization of complex adaptive systems? The books, research, and tools of the Maha Framework by Mayone Maha Rajan.">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.6">
+  <style type="text/css">
+    body {background-color: #0c0b0a}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 17.0px 'Helvetica Neue'; color: #0c0b0a; -webkit-text-stroke: #0c0b0a; background-color: #b99149}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 17.0px 'Helvetica Neue'; color: #0c0b0a; -webkit-text-stroke: #0c0b0a; background-color: #b99149; min-height: 20.0px}
+    span.s1 {font-kerning: none}
+  </style>
 </head>
-
 <body>
-
-<a class="skip" href="#main">Skip to content</a>
-
-
-
-<header class="site-head">
-
-  <div class="wrap">
-
-    <a class="brand" href="/"><b>The Maha Principle</b></a>
-
-    <nav class="nav-links" aria-label="Primary">
-
-      <a href="/#diagnosis">The Diagnosis</a>
-
-      <a href="/#framework">The Framework</a>
-
-      <a href="/#author">The Author</a>
-
-      <a href="/framework.html">The Program</a>
-
-    </nav>
-
-    <a class="nav-cta" href="https://www.amazon.com/dp/B0H62WLMT5" rel="noopener">Pre-order</a>
-
-  </div>
-
-</header>
-
-
-
-<main id="main">
-
-
-
-  <!-- HERO -->
-
-  <section class="phero">
-
-    <div class="wrap">
-
-      <p class="label">The Research Program</p>
-
-      <h1>The Maha Framework</h1>
-
-      <p class="question">One question, pursued across every scale at which it appears:&nbsp; what governs the organization of complex adaptive systems?</p>
-
-      <p class="lede">Physics asks what governs matter. Biology asks what governs life. This body of work asks what governs <em>organization itself</em> — the recurring grammar by which complex systems, from civilizations to cells to minds, hold their form against decay.</p>
-
-      <p class="lede dim">What follows is not a catalogue of products. It is a map of an inquiry in progress: where it began, where it has reached, and where it is going next.</p>
-
-    </div>
-
-  </section>
-
-
-
-  <!-- THE TWO AXES -->
-
-  <section class="axes">
-
-    <div class="wrap">
-
-      <p class="label">The Spine · Two Directions, One Question</p>
-
-      <div class="axis-grid">
-
-        <div class="axis">
-
-          <p class="dir">Civilization → Inward</p>
-
-          <h3>The Maha Principle</h3>
-
-          <p class="work">The Architecture of Human Flourishing</p>
-
-          <p>Begins with the visible crises of modern life — metabolic, attentional, relational — and works inward to the coupled failure beneath them. How complex human systems flourish, stagnate, and renew.</p>
-
-        </div>
-
-        <div class="axis">
-
-          <p class="dir">Cognition → Outward</p>
-
-          <h3>The Orbital Mind</h3>
-
-          <p class="work">The Astrophysics of the Self</p>
-
-          <p>Begins with the oldest stable system we know intimately — the solar system — and works outward to the mind, using orbital organization as a descriptive map for cognition. How a single intelligence generates and coordinates systems in the first place.</p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-  <!-- PROGRAM MAP -->
-
-  <section class="program">
-
-    <div class="wrap">
-
-      <div class="program-head">
-
-        <p class="label">The Work</p>
-
-        <h2>An Evolving Body of Work</h2>
-
-        <p>The framework expresses itself in several forms — a planned six-volume sequence of books that argue it, research that tests it, and tools that apply it. The arc moves outward in scale, from the individual to the species to the cosmos. One book is nearing release; the rest are in development or planned, and are marked as such. What follows is a map of the inquiry, not a catalogue of finished products.</p>
-
-      </div>
-
-
-
-      <!-- BOOKS — THE SIX-VOLUME ARC -->
-
-      <div class="group">
-
-        <p class="group-title">The Books · A Six-Volume Arc</p>
-
-
-
-        <!-- PHASE 1 -->
-
-        <div class="phase">
-
-          <p class="phase-tag">Phase I · The Individual</p>
-
-          <h4>Securing and understanding the single human system</h4>
-
-          <p>The first three books work at the scale of one person — the body, the mind, and the relationship between a human and the machines now augmenting it.</p>
-
-        </div>
-
-
-
-        <div class="item">
-
-          <div class="item-main">
-
-            <h3><a href="https://www.amazon.com/dp/B0H62WLMT5" rel="noopener">I · The Maha Principle</a></h3>
-
-            <p class="kind">Nonfiction · The Architecture of Human Flourishing</p>
-
-            <p>The foundation. Argues that metabolic decline, attentional capture, and social disconnection are one coupled failure, and lays out the M.A.H.A. framework for rebuilding the physical and cognitive baseline.</p>
-
-          </div>
-
-          <span class="status s-soon">Releases Jul 10 2026 · Pre-order</span>
-
-        </div>
-
-        <div class="item">
-
-          <div class="item-main">
-
-            <h3>II · The Orbital Mind</h3>
-
-            <p class="kind">Nonfiction · The Astrophysics of the Self</p>
-
-            <p>Maps the organization of the solar system onto the architecture of cognition — a descriptive framework, grounded in dissipative-systems theory and neuroscience, for navigating one's own psychology.</p>
-
-          </div>
-
-          <span class="status s-dev">In development</span>
-
-        </div>
-
-        <div class="item">
-
-          <div class="item-main">
-
-            <h3>III · The Synthetic Self</h3>
-
-            <p class="kind">Nonfiction · On Artificial Intelligence</p>
-
-            <p>Examines machine intelligence as a compression of the human record — and argues that the alignment problem is, at root, a human problem reflected back at us. How to integrate AI as a genuine partner rather than a dependency.</p>
-
-          </div>
-
-          <span class="status s-plan">Planned</span>
-
-        </div>
-
-
-
-        <!-- PHASE 2 -->
-
-        <div class="phase">
-
-          <p class="phase-tag">Phase II · The Species</p>
-
-          <h4>From individual to lineage</h4>
-
-          <p>With the individual system in view, the inquiry scales up to ask how the questions of enhancement, intention, and design play out at the level of humanity as a whole.</p>
-
-        </div>
-
-
-
-        <div class="item">
-
-          <div class="item-main">
-
-            <h3>IV · The Omega Point</h3>
-
-            <p class="kind">Nonfiction · On Intentional Human Futures</p>
-
-            <p>A book-length examination of the questions raised as humanity gains tools to shape its own biology and trajectory — what it means to move from undirected change toward deliberate, ethically fraught design. Explored as open inquiry, not prophecy.</p>
-
-          </div>
-
-          <span class="status s-concept">Planned · Conceptual</span>
-
-        </div>
-
-
-
-        <!-- PHASE 3 -->
-
-        <div class="phase">
-
-          <p class="phase-tag">Phase III · The Cosmos</p>
-
-          <h4>From the biological to the philosophical</h4>
-
-          <p>The final two volumes are openly speculative philosophy — extending the framework's organizing question to its largest scale, and clearly labeled as inquiry rather than established claim.</p>
-
-        </div>
-
-
-
-        <div class="item">
-
-          <div class="item-main">
-
-            <h3>V · The Cosmic Recursion</h3>
-
-            <p class="kind">Speculative philosophy · On Mind and Cosmos</p>
-
-            <p>A philosophical exploration of the parallels between physical and cognitive organization — taking seriously, and examining critically, the family of ideas that treat structure in the universe and structure in the mind as expressions of a shared grammar.</p>
-
-          </div>
-
-          <span class="status s-concept">Planned · Conceptual</span>
-
-        </div>
-
-        <div class="item">
-
-          <div class="item-main">
-
-            <h3>VI · The Mayon Paradox</h3>
-
-            <p class="kind">Speculative philosophy · A Synthesis</p>
-
-            <p>The closing synthesis: an attempt to reconcile the individual and the collective, self-possession and interdependence, into a single coherent picture of a flourishing life. The capstone of the arc, and the most exploratory volume in it.</p>
-
-          </div>
-
-          <span class="status s-concept">Planned · Conceptual</span>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- APPLIED -->
-
-      <div class="group">
-
-        <p class="group-title">Applied</p>
-
-        <div class="item">
-
-          <div class="item-main">
-
-            <h3>Maha OS</h3>
-
-            <p class="kind">Mobile application · iOS &amp; Android</p>
-
-            <p>The framework operationalized as a daily practice — turning the book's diagnosis into a usable set of habits for metabolic and attentional health.</p>
-
-          </div>
-
-          <span class="status s-live">Live</span>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- RESEARCH -->
-
-      <div class="group">
-
-        <p class="group-title">Research</p>
-
-        <div class="item">
-
-          <div class="item-main">
-
-            <h3>The Maha Framework — Whitepaper</h3>
-
-            <p class="kind">Foundational document</p>
-
-            <p>The formal statement of the framework's core claims and method: a falsification-first, radically transparent approach to the organization of complex adaptive systems.</p>
-
-          </div>
-
-          <span class="status s-dev">In development</span>
-
-        </div>
-
-        <div class="item">
-
-          <div class="item-main">
-
-            <h3>Supporting Papers</h3>
-
-            <p class="kind">Research series</p>
-
-            <p>A growing set of working papers and studies that test, extend, and stress the framework's claims across domains — published under the same zero-fabrication discipline as the books.</p>
-
-          </div>
-
-          <span class="status s-dev">Ongoing</span>
-
-        </div>
-
-      </div>
-
-
-
-    </div>
-
-  </section>
-
-
-
-  <!-- HONESTY NOTE -->
-
-  <section class="note">
-
-    <div class="wrap">
-
-      <div class="inner">
-
-        <p class="label">A Note on Method</p>
-
-        <p>This is an active research program, not a finished system. Items marked <em>in development</em> or <em>planned</em> are exactly that — work underway or intended, listed openly rather than implied.</p>
-
-        <p>The models offered across this work are conceptual tools, not final answers. They are meant to be examined, refined, criticized, and extended. If they prove useful, it will not be because they end inquiry, but because they help organize it. That has been the purpose from the beginning.</p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-</main>
-
-
-
-<footer>
-
-  <div class="wrap foot-cols">
-
-    <span class="foot-brand">The Maha Framework</span>
-
-    <nav class="foot-links" aria-label="Footer">
-
-      <a href="/">The Book</a>
-
-      <a href="https://www.mayonemaharajan.com/" rel="noopener">The Author</a>
-
-      <a href="https://www.amazon.com/dp/B0H62WLMT5" rel="noopener">Pre-order</a>
-
-    </nav>
-
-    <span>&copy; 2026 Mayone Maha Rajan</span>
-
-  </div>
-
-</footer>
-
-
-
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta charset="utf-8"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;!-- ============ PRIMARY META ============ --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;title&gt;The Maha Framework — A Research Program | Mayone Maha Rajan&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta name="description" content="An evolving body of work investigating one question across scales: what governs the organization of complex adaptive systems? The books, research, and tools of the Maha Framework by Mayone Maha Rajan."&gt;</span></p>
+<p class="p1"><span class="s1">&lt;link rel="canonical" href="https://themahaprinciple.com/framework.html"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta name="author" content="Mayone Maha Rajan"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta name="theme-color" content="#0E0C0A"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta name="robots" content="index, follow, max-image-preview:large"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;!-- ============ OPEN GRAPH ============ --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta property="og:type" content="website"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta property="og:title" content="The Maha Framework — A Research Program"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta property="og:description" content="One question pursued across scales: what governs the organization of complex adaptive systems? The books, research, and tools of an evolving body of work."&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta property="og:url" content="https://themahaprinciple.com/framework.html"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta property="og:site_name" content="The Maha Principle"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta property="og:image" content="https://themahaprinciple.com/cover.jpg"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta property="og:image:width" content="1600"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta property="og:image:height" content="2560"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta property="og:image:type" content="image/jpeg"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;!-- ============ FONTS ============ --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</span></p>
+<p class="p1"><span class="s1">&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;!-- ============ FAVICON / MANIFEST ============ --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;link rel="icon" href="/favicon.ico" sizes="any"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;link rel="icon" href="/favicon.svg" type="image/svg+xml"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;link rel="apple-touch-icon" href="/apple-touch-icon.png"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;link rel="manifest" href="/site.webmanifest"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;link rel="alternate" type="text/markdown" href="/llms.txt" title="LLM-readable summary"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;!-- ============ JSON-LD: CREATIVE WORK SERIES ============ --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;script type="application/ld+json"&gt;</span></p>
+<p class="p1"><span class="s1">{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>"@context": "https://schema.org",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>"@type": "CreativeWorkSeries",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>"name": "The Maha Framework",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>"url": "https://themahaprinciple.com/framework.html",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>"description": "An evolving body of work investigating what governs the organization of complex adaptive systems, examined across scales from civilization to cognition.",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>"author": {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>"@type": "Person",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>"name": "Mayone Maha Rajan",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>"url": "https://www.mayonemaharajan.com/"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>"hasPart": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"@type": "Book",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"name": "The Maha Principle: The Architecture of Human Flourishing",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"url": "https://themahaprinciple.com/",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"datePublished": "2026-07-10"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"@type": "Book",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"name": "The Orbital Mind: The Astrophysics of the Self",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"creativeWorkStatus": "In development"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"@type": "Book",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"name": "The Synthetic Self",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"creativeWorkStatus": "Planned"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"@type": "Book",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"name": "The Omega Point",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"creativeWorkStatus": "Planned"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"@type": "Book",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"name": "The Cosmic Recursion",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"creativeWorkStatus": "Planned"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"@type": "Book",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"name": "The Mayon Paradox",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"creativeWorkStatus": "Planned"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"@type": "SoftwareApplication",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"name": "Maha OS",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"applicationCategory": "HealthApplication",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"operatingSystem": "Android, iOS"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"@type": "ScholarlyArticle",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"name": "The M·A·H·A Framework: An Integrative Architecture for Resisting Systemic Metabolic, Attentional, and Relational Extraction",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"author": {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>"@type": "Person",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>"name": "Mayone Maha Rajan",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>"identifier": "https://orcid.org/0009-0006-8135-5306"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"datePublished": "2026-06-18",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"identifier": "https://doi.org/10.5281/zenodo.20746123",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"url": "https://doi.org/10.5281/zenodo.20746123",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"publisher": { "@type": "Organization", "name": "Zenodo" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"license": "https://creativecommons.org/licenses/by/4.0/",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>"creativeWorkStatus": "Published"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>]</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>:root{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--ink:#0E0C0A;--ink-2:#161310;--gold:#C6A15B;--gold-bright:#E4C683;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--evergreen:#1F3A30;--bone:#EDE6D6;--bone-dim:#9A9384;--rule:#2A2620;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--maxw:1100px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--serif:"EB Garamond","Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--mono:"IBM Plex Mono",ui-monospace,"SF Mono","Cascadia Mono","Roboto Mono",Menlo,Consolas,monospace;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>*{box-sizing:border-box;margin:0;padding:0}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>body{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background:var(--ink);color:var(--bone);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-family:var(--sans);font-size:17px;line-height:1.65;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-feature-settings:"kern" 1,"liga" 1;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>body::before{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background:</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>radial-gradient(120% 80% at 50% -10%, rgba(198,161,91,.06), transparent 55%),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>radial-gradient(100% 60% at 50% 110%, rgba(31,58,48,.10), transparent 60%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>body::after{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.035;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>mix-blend-mode:overlay;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:clamp(20px,5vw,64px)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>a{color:inherit;text-decoration:none}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.1;letter-spacing:0}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>h1{letter-spacing:-.005em}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.label{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>color:var(--gold);display:inline-flex;align-items:center;gap:14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.label::before{content:"";width:34px;height:1px;background:var(--gold);opacity:.6}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.skip{position:absolute;left:-9999px;top:0;background:var(--gold);color:var(--ink);padding:10px 16px;z-index:100}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.skip:focus{left:8px;top:8px}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>/* header */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.site-head{position:sticky;top:0;z-index:50;background:rgba(14,12,10,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.site-head .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.brand{font-family:var(--serif);font-size:18px;letter-spacing:.01em}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.brand b{color:var(--gold);font-weight:600}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.nav-links{display:flex;gap:28px;font-size:14px;color:var(--bone-dim)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.nav-links a:hover{color:var(--bone)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.nav-cta{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);padding:8px 14px;border-radius:2px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.nav-cta:hover{background:var(--gold);color:var(--ink)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>@media(max-width:760px){.nav-links{display:none}}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>/* hero */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.phero{border-bottom:1px solid var(--rule);padding-block:clamp(56px,9vw,104px)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.phero .label{margin-bottom:28px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.phero h1{font-size:clamp(38px,6vw,68px);margin-bottom:26px;max-width:18ch}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.question{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-family:var(--serif);font-style:italic;color:var(--gold);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-size:clamp(21px,3.2vw,32px);line-height:1.32;max-width:24ch;margin-bottom:30px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.phero .lede{color:var(--bone);font-size:clamp(17px,2.1vw,19px);max-width:60ch;line-height:1.6;margin-bottom:14px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.phero .lede.dim{color:var(--bone-dim)}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>/* the two-axis spine */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.axes{border-bottom:1px solid var(--rule);padding-block:clamp(48px,7vw,84px)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.axes .label{margin-bottom:40px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.axis-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);border:1px solid var(--rule)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.axis{background:var(--ink);padding:clamp(28px,4vw,44px)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.axis .dir{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--bone-dim);margin-bottom:18px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.axis h3{font-size:clamp(22px,2.6vw,27px);margin-bottom:8px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.axis .work{font-family:var(--serif);font-style:italic;color:var(--gold);font-size:17px;margin-bottom:14px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.axis p{color:var(--bone-dim);font-size:15.5px;line-height:1.6}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>@media(max-width:680px){.axis-grid{grid-template-columns:1fr}}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>/* program map — grouped ledger */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.program{padding-block:clamp(48px,7vw,84px)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.program .label{margin-bottom:14px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.program-head h2{font-size:clamp(28px,4vw,42px);margin-bottom:14px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.program-head p{color:var(--bone-dim);max-width:58ch;margin-bottom:48px}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.group{margin-bottom:46px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.group-title{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>color:var(--gold);padding-bottom:14px;margin-bottom:6px;border-bottom:1px solid var(--rule);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.item{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>display:grid;grid-template-columns:1fr auto;gap:20px;align-items:start;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding-block:24px;border-bottom:1px solid var(--rule);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.item-main h3{font-size:21px;margin-bottom:6px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.item-main h3 a{border-bottom:1px solid transparent;transition:border-color .15s}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.item-main h3 a:hover{border-color:var(--gold)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.item-main .kind{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--bone-dim);margin-bottom:10px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.item-main p{color:var(--bone-dim);font-size:15.5px;line-height:1.6;max-width:62ch}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>/* status pill */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.status{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding:5px 11px;border-radius:2px;white-space:nowrap;border:1px solid;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.s-live{color:#7FAE9B;border-color:#33564a;background:rgba(31,58,48,.25)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.s-soon{color:var(--gold);border-color:#5a4a2c;background:rgba(198,161,91,.08)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.s-dev{color:var(--bone-dim);border-color:var(--rule)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.s-plan{color:var(--bone-dim);border-color:var(--rule);opacity:.8}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.s-concept{color:var(--bone-dim);border-color:var(--rule);opacity:.6;font-style:normal}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.s-pub{color:#7FAE9B;border-color:#33564a;background:rgba(31,58,48,.25)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.doi{font-family:var(--mono);font-size:12px;color:var(--gold);margin-top:10px;display:inline-flex;align-items:center;gap:8px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.doi a{border-bottom:1px solid rgba(198,161,91,.4)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.doi a:hover{border-color:var(--gold)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.doi .badge{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--bone-dim);border:1px solid var(--rule);border-radius:2px;padding:2px 7px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>/* phase sub-header within the books group */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.phase{margin:38px 0 4px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.phase:first-of-type{margin-top:8px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.phase-tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);opacity:.85}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.phase h4{font-family:var(--serif);font-size:19px;font-weight:600;color:var(--bone);margin:6px 0 4px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.phase p{color:var(--bone-dim);font-size:14.5px;line-height:1.55;max-width:64ch}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>@media(max-width:560px){.item{grid-template-columns:1fr}.status{justify-self:start}}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>/* closing honesty note */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.note{border-top:1px solid var(--rule);padding-block:clamp(40px,6vw,72px)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.note .inner{border:1px solid var(--rule);border-radius:3px;background:linear-gradient(180deg,var(--ink-2),var(--ink));padding:clamp(26px,4vw,40px);max-width:none}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.note .label{margin-bottom:18px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.note p{color:var(--bone-dim);font-size:16px;line-height:1.7;max-width:64ch;margin-bottom:12px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.note p:last-child{margin-bottom:0}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.note a.inline{color:var(--gold);border-bottom:1px solid rgba(198,161,91,.4)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.note a.inline:hover{border-color:var(--gold)}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>/* footer */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>footer{border-top:1px solid var(--rule);padding-block:48px;font-size:14px;color:var(--bone-dim)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.foot-cols{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:center}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.foot-links{display:flex;gap:24px;flex-wrap:wrap}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.foot-links a:hover{color:var(--bone)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.foot-brand{font-family:var(--serif);color:var(--bone)}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}</span></p>
+<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="skip" href="#main"&gt;Skip to content&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;header class="site-head"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="wrap"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a class="brand" href="/"&gt;&lt;b&gt;The Maha Principle&lt;/b&gt;&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;nav class="nav-links" aria-label="Primary"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="/#diagnosis"&gt;The Diagnosis&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="/#framework"&gt;The Framework&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="/#author"&gt;The Author&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="/framework.html"&gt;The Program&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a class="nav-cta" href="https://www.amazon.com/dp/B0H62WLMT5" rel="noopener"&gt;Pre-order&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/header&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;main id="main"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- HERO --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section class="phero"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="wrap"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p class="label"&gt;The Research Program&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;h1&gt;The Maha Framework&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p class="question"&gt;One question, pursued across every scale at which it appears:&amp;nbsp; what governs the organization of complex adaptive systems?&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p class="lede"&gt;Physics asks what governs matter. Biology asks what governs life. This body of work asks what governs &lt;em&gt;organization itself&lt;/em&gt; — the recurring grammar by which complex systems, from civilizations to cells to minds, hold their form against decay.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p class="lede dim"&gt;What follows is not a catalogue of products. It is a map of an inquiry in progress: where it began, where it has reached, and where it is going next.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- THE TWO AXES --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section class="axes"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="wrap"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p class="label"&gt;The Spine · Two Directions, One Question&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="axis-grid"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="axis"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p class="dir"&gt;Civilization → Inward&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;h3&gt;The Maha Principle&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p class="work"&gt;The Architecture of Human Flourishing&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p&gt;Begins with the visible crises of modern life — metabolic, attentional, relational — and works inward to the coupled failure beneath them. How complex human systems flourish, stagnate, and renew.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="axis"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p class="dir"&gt;Cognition → Outward&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;h3&gt;The Orbital Mind&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p class="work"&gt;The Astrophysics of the Self&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p&gt;Begins with the oldest stable system we know intimately — the solar system — and works outward to the mind, using orbital organization as a descriptive map for cognition. How a single intelligence generates and coordinates systems in the first place.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- PROGRAM MAP --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section class="program"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="wrap"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="program-head"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="label"&gt;The Work&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;An Evolving Body of Work&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;The framework expresses itself in several forms — a planned six-volume sequence of books that argue it, research that tests it, and tools that apply it. The arc moves outward in scale, from the individual to the species to the cosmos. One book is nearing release; the rest are in development or planned, and are marked as such. What follows is a map of the inquiry, not a catalogue of finished products.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;!-- BOOKS — THE SIX-VOLUME ARC --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="group"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="group-title"&gt;The Books · A Six-Volume Arc&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- PHASE 1 --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="phase"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p class="phase-tag"&gt;Phase I · The Individual&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;h4&gt;Securing and understanding the single human system&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p&gt;The first three books work at the scale of one person — the body, the mind, and the relationship between a human and the machines now augmenting it.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="item"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="item-main"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3&gt;&lt;a href="https://www.amazon.com/dp/B0H62WLMT5" rel="noopener"&gt;I · The Maha Principle&lt;/a&gt;&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="kind"&gt;Nonfiction · The Architecture of Human Flourishing&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;The foundation. Argues that metabolic decline, attentional capture, and social disconnection are one coupled failure, and lays out the M.A.H.A. framework for rebuilding the physical and cognitive baseline.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="status s-soon"&gt;Releases Jul 10 2026 · Pre-order&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="item"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="item-main"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3&gt;II · The Orbital Mind&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="kind"&gt;Nonfiction · The Astrophysics of the Self&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;Maps the organization of the solar system onto the architecture of cognition — a descriptive framework, grounded in dissipative-systems theory and neuroscience, for navigating one's own psychology.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="status s-dev"&gt;In development&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="item"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="item-main"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3&gt;III · The Synthetic Self&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="kind"&gt;Nonfiction · On Artificial Intelligence&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;Examines machine intelligence as a compression of the human record — and argues that the alignment problem is, at root, a human problem reflected back at us. How to integrate AI as a genuine partner rather than a dependency.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="status s-plan"&gt;Planned&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- PHASE 2 --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="phase"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p class="phase-tag"&gt;Phase II · The Species&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;h4&gt;From individual to lineage&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p&gt;With the individual system in view, the inquiry scales up to ask how the questions of enhancement, intention, and design play out at the level of humanity as a whole.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="item"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="item-main"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3&gt;IV · The Omega Point&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="kind"&gt;Nonfiction · On Intentional Human Futures&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;A book-length examination of the questions raised as humanity gains tools to shape its own biology and trajectory — what it means to move from undirected change toward deliberate, ethically fraught design. Explored as open inquiry, not prophecy.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="status s-concept"&gt;Planned · Conceptual&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- PHASE 3 --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="phase"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p class="phase-tag"&gt;Phase III · The Cosmos&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;h4&gt;From the biological to the philosophical&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p&gt;The final two volumes are openly speculative philosophy — extending the framework's organizing question to its largest scale, and clearly labeled as inquiry rather than established claim.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="item"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="item-main"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3&gt;V · The Cosmic Recursion&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="kind"&gt;Speculative philosophy · On Mind and Cosmos&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;A philosophical exploration of the parallels between physical and cognitive organization — taking seriously, and examining critically, the family of ideas that treat structure in the universe and structure in the mind as expressions of a shared grammar.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="status s-concept"&gt;Planned · Conceptual&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="item"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="item-main"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3&gt;VI · The Mayon Paradox&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="kind"&gt;Speculative philosophy · A Synthesis&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;The closing synthesis: an attempt to reconcile the individual and the collective, self-possession and interdependence, into a single coherent picture of a flourishing life. The capstone of the arc, and the most exploratory volume in it.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="status s-concept"&gt;Planned · Conceptual&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;!-- APPLIED --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="group"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="group-title"&gt;Applied&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="item"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="item-main"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Maha OS&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="kind"&gt;Mobile application · iOS &amp;amp; Android&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;The framework operationalized as a daily practice — turning the book's diagnosis into a usable set of habits for metabolic and attentional health.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="status s-live"&gt;Live&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;!-- RESEARCH --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="group"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="group-title"&gt;Research&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="item"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="item-main"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3&gt;&lt;a href="https://doi.org/10.5281/zenodo.20746123" rel="noopener"&gt;The M·A·H·A Framework&lt;/a&gt;&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="kind"&gt;Working paper · An Integrative Architecture for Resisting Systemic Metabolic, Attentional, and Relational Extraction&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;The formal foundation. Formalizes the framework as an integrative socio-biological model: that contemporary metabolic, attentional, and relational pathologies are coupled downstream consequences of a single extractive architecture. Develops the proposed couplings, sets boundary conditions, and concludes with a formal falsifiability protocol — every claim tagged by evidence level.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="doi"&gt;&lt;span class="badge"&gt;DOI&lt;/span&gt; &lt;a href="https://doi.org/10.5281/zenodo.20746123" rel="noopener"&gt;10.5281/zenodo.20746123&lt;/a&gt; · CC-BY 4.0 · Open access&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="status s-pub"&gt;Published&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="item"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="item-main"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3&gt;&lt;a href="https://research.mahastrategies.com/" rel="noopener"&gt;Supporting Papers&lt;/a&gt;&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="kind"&gt;Research series · Maha Strategies Research&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;A growing set of working papers testing cross-disciplinary structural analogies that stress the framework's claims — presented as falsifiable hypotheses under explicit provenance discipline, several archived with their own DOIs.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="status s-dev"&gt;Ongoing&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- HONESTY NOTE --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section class="note"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="wrap"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="inner"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="label"&gt;A Note on Method&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;This is an active research program, not a finished system. Items marked &lt;em&gt;in development&lt;/em&gt; or &lt;em&gt;planned&lt;/em&gt; are exactly that — work underway or intended, listed openly rather than implied.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;The models offered across this work are conceptual tools, not final answers. They are meant to be examined, refined, criticized, and extended. If they prove useful, it will not be because they end inquiry, but because they help organize it. That has been the purpose from the beginning.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/main&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;footer&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="wrap foot-cols"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;span class="foot-brand"&gt;The Maha Framework&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;nav class="foot-links" aria-label="Footer"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="/"&gt;The Book&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="https://www.mayonemaharajan.com/" rel="noopener"&gt;The Author&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="https://www.amazon.com/dp/B0H62WLMT5" rel="noopener"&gt;Pre-order&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;span&gt;&amp;copy; 2026 Mayone Maha Rajan&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/footer&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
 </body>
-
 </html>
-
