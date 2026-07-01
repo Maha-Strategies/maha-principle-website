@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,6 +54,7 @@
 {
   "@context": "https://schema.org",
   "@type": "Book",
+  "@id": "https://themahaprinciple.com/#book",
   "name": "The Maha Principle: The Architecture of Human Flourishing",
   "alternateName": "The Architecture of Human Flourishing",
   "bookFormat": "https://schema.org/EBook",
@@ -62,19 +64,12 @@
   "datePublished": "2026-07-10",
   "description": "A field manual for rebuilding your biological, cognitive, and relational foundations in an extractive world. The Maha Principle argues that metabolic decline, attentional captivity, and existential fragmentation are not three separate crises but one coupled failure — and lays out the M.A.H.A. framework for rebuilding from the inside out.",
   "genre": ["Cognitive Science", "Health", "Self-Help", "Systems Thinking"],
-  "author": {
-    "@type": "Person",
-    "name": "Mayone Maha Rajan",
-    "url": "https://themahaprinciple.com/#author",
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "University of California, San Diego"
-    },
-    "knowsAbout": ["Cognitive Science", "Metabolic Health", "Systems Thinking", "Attention"]
-  },
+  "author": {"@id": "https://themahaprinciple.com/#author"},
+  "sameAs": ["https://www.mayonemaharajan.com/concepts/the-maha-principle"],
   "workExample": {
     "@type": "Book",
     "bookFormat": "https://schema.org/EBook",
+    "isbn": "B0H62WLMT5",
     "potentialAction": {
       "@type": "PreOrderAction",
       "target": "https://www.amazon.com/dp/B0H62WLMT5"
@@ -85,7 +80,8 @@
       "price": "2.99",
       "priceCurrency": "USD",
       "url": "https://www.amazon.com/dp/B0H62WLMT5",
-      "availabilityStarts": "2026-07-10"
+      "availabilityStarts": "2026-07-10",
+      "seller": {"@type": "Organization", "name": "Amazon"}
     }
   }
 }
@@ -98,9 +94,15 @@
   "@type": "Person",
   "@id": "https://themahaprinciple.com/#author",
   "name": "Mayone Maha Rajan",
-  "jobTitle": "Author & Researcher",
-  "sameAs": ["https://www.mayonemaharajan.com/", "https://www.mayonemaharajan.com/concepts/the-maha-principle"],
-  "description": "Writer and researcher working at the intersection of cognitive science, metabolic health, and systems thinking. Author of The Maha Principle.",
+  "alternateName": "MayonE",
+  "jobTitle": "Cultural strategist, author, and technology founder",
+  "sameAs": [
+    "https://www.mayonemaharajan.com/",
+    "https://www.mayonemaharajan.com/concepts/the-maha-principle",
+    "https://www.facebook.com/622592662",
+    "https://www.instagram.com/mayon_rajan"
+  ],
+  "description": "Cultural strategist, author, and technology founder working at the intersection of cognitive science, applied cybernetics, and agentic systems. Trained in Cognitive Science at UC San Diego. Author of The Maha Principle.",
   "alumniOf": {
     "@type": "CollegeOrUniversity",
     "name": "University of California, San Diego"
@@ -109,7 +111,7 @@
     "@type": "Place",
     "name": "Colombo, Sri Lanka"
   },
-  "knowsAbout": ["Cognitive Science", "Metabolic Health", "Attention", "Systems Thinking", "Human Flourishing"]
+  "knowsAbout": ["Cognitive Science", "Metabolic Health", "Attention", "Systems Thinking", "Human Flourishing", "Biological Sovereignty", "Digital Autonomy"]
 }
 </script>
 
@@ -132,10 +134,51 @@
       "name": "When does The Maha Principle release?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Maha Principle releases on July 10, 2026, and is available now for pre-order on Amazon Kindle."
+        "text": "The Maha Principle releases on July 10, 2026, and is available now for pre-order on Amazon Kindle for $2.99."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does M.A.H.A. stand for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "M.A.H.A. stands for Mindfulness, Authenticity, Health, and Action — four sequential capacities for restoring biological, cognitive, and relational sovereignty."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is The Maha Principle related to Buddhism, Hinduism, or the Hare Krishna maha-mantra?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Despite the shared Sanskrit word 'maha' meaning 'great,' The Maha Principle is a secular framework in cognitive science and systems thinking, not a religious teaching. It is distinct from Mahayana Buddhism, MahaDharma, or the Hare Krishna maha-mantra."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this medical advice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The author is not a medical doctor. The book is educational and philosophical, and readers should consult qualified healthcare professionals before making health changes."
       }
     }
   ]
+}
+</script>
+
+<!-- ============ JSON-LD: WEBSITE ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://themahaprinciple.com/#website",
+  "url": "https://themahaprinciple.com/",
+  "name": "The Maha Principle",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Maha Strategies LLC",
+    "url": "https://www.mayonemaharajan.com/"
+  },
+  "inLanguage": "en"
 }
 </script>
 
