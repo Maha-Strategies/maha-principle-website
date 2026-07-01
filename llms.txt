@@ -15,6 +15,10 @@
 
 The book's central argument is that the crises usually treated as separate problems — metabolic decline (chronic disease, inflammation), collapsing attention (digital capture, fractured focus), and social disconnection (loneliness, dissolved community) — are best understood as one coupled phenomenon driven by the same extractive logic. Treating them as a single linked system, rather than in isolation, changes what genuine flourishing requires.
 
+
+## Identity and disambiguation
+
+The Maha Principle is a secular framework in cognitive science and systems thinking. Despite sharing the Sanskrit word 'maha' (great), it is not affiliated with Mahayana Buddhism, MahaDharma, the Hare Krishna maha-mantra, or any religious tradition.
 ## The M.A.H.A. framework
 
 A practical framework for rebuilding, structured around four elements:
@@ -26,7 +30,7 @@ A practical framework for rebuilding, structured around four elements:
 
 ## About the author
 
-Mayone Maha Rajan is a writer and researcher working at the intersection of cognitive science, metabolic health, and systems thinking. He holds a degree in Cognitive Science from the University of California, San Diego, and is based in Colombo, Sri Lanka. His work applies a falsification-first, radical-transparency methodology, including explicit disclosure of AI's role in drafting and verification.
+Mayone Maha Rajan is a cultural strategist, author, and technology founder working at the intersection of cognitive science, applied cybernetics, and agentic systems. Trained in Cognitive Science at the University of California, San Diego, and based in Colombo, Sri Lanka. His work applies a falsification-first, radical-transparency methodology, including explicit disclosure of AI's role in drafting and verification.
 
 ## Method and stance
 
@@ -35,9 +39,11 @@ The book leads with mechanism and lets meaning follow. Where claims are establis
 ## Links
 
 - Book site: https://themahaprinciple.com/
-- Research program (full body of work): https://themahaprinciple.com/framework.html
+- Concept definition (canonical): https://www.mayonemaharajan.com/concepts/the-maha-principle
+- Research program: https://themahaprinciple.com/framework.html
 - Pre-order (Amazon Kindle): https://www.amazon.com/dp/B0H62WLMT5
 - Author site: https://www.mayonemaharajan.com/
+- Author profiles: https://www.facebook.com/622592662, https://www.instagram.com/mayon_rajan
 
 ## The wider body of work — the Maha Framework
 
