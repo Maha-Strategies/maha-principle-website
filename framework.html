@@ -7,7 +7,7 @@
 
 <!-- ============ PRIMARY META ============ -->
 <title>The Maha Framework — A Research Program | Mayone Maha Rajan</title>
-<meta name="description" content="An evolving body of work investigating one question across scales: what governs the organization of complex adaptive systems? The books, research, and tools of the Maha Framework by Mayone Maha Rajan.">
+<meta name="description" content="The Maha Framework by Mayone Maha Rajan (UC San Diego Cognitive Science): an evolving research program on complex adaptive systems, with books, the Maha OS app, and open research.">
 <link rel="canonical" href="https://themahaprinciple.com/framework.html">
 <meta name="author" content="Mayone Maha Rajan">
 <meta name="theme-color" content="#0E0C0A">
@@ -24,6 +24,12 @@
 <meta property="og:image:height" content="2560">
 <meta property="og:image:type" content="image/jpeg">
 
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Maha Framework — A Research Program">
+<meta name="twitter:description" content="Books, research, and tools investigating what governs organization in complex adaptive systems.">
+<meta name="twitter:image" content="https://themahaprinciple.com/cover.jpg">
+
 <!-- ============ FONTS ============ -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,81 +42,90 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="alternate" type="text/markdown" href="/llms.txt" title="LLM-readable summary">
 
-<!-- ============ JSON-LD: CREATIVE WORK SERIES ============ -->
+<!-- ============ JSON-LD: ENHANCED ============ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "CreativeWorkSeries",
-  "name": "The Maha Framework",
-  "url": "https://themahaprinciple.com/framework.html",
-  "description": "An evolving body of work investigating what governs the organization of complex adaptive systems, examined across scales from civilization to cognition.",
-  "author": {
-    "@type": "Person",
-    "name": "Mayone Maha Rajan",
-    "url": "https://www.mayonemaharajan.com/"
-  },
-  "hasPart": [
+  "@graph": [
     {
-      "@type": "Book",
-      "name": "The Maha Principle: The Architecture of Human Flourishing",
-      "url": "https://themahaprinciple.com/",
-      "datePublished": "2026-07-10"
-    },
-    {
-      "@type": "Book",
-      "name": "The Orbital Mind: The Astrophysics of the Self",
-      "creativeWorkStatus": "In development"
-    },
-    {
-      "@type": "Book",
-      "name": "The Synthetic Self",
-      "creativeWorkStatus": "Planned"
-    },
-    {
-      "@type": "Book",
-      "name": "The Unfinished Species",
-      "creativeWorkStatus": "Planned"
-    },
-    {
-      "@type": "Book",
-      "name": "The Imagined Life",
-      "creativeWorkStatus": "Planned"
-    },
-    {
-      "@type": "Book",
-      "name": "The Borrowed Light",
-      "creativeWorkStatus": "Planned"
-    },
-    {
-      "@type": "Book",
-      "name": "The Cosmic Recursion",
-      "creativeWorkStatus": "Planned"
-    },
-    {
-      "@type": "Book",
-      "name": "The Mayon Paradox",
-      "creativeWorkStatus": "Planned"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "Maha OS",
-      "applicationCategory": "HealthApplication",
-      "operatingSystem": "Android, iOS"
-    },
-    {
-      "@type": "ScholarlyArticle",
-      "name": "The M·A·H·A Framework: An Integrative Architecture for Resisting Systemic Metabolic, Attentional, and Relational Extraction",
-      "author": {
-        "@type": "Person",
-        "name": "Mayone Maha Rajan",
-        "identifier": "https://orcid.org/0009-0006-8135-5306"
+      "@type": "Person",
+      "@id": "https://themahaprinciple.com/#author",
+      "name": "Mayone Maha Rajan",
+      "alternateName": "MayonE",
+      "jobTitle": "Cultural strategist, author, and technology founder",
+      "url": "https://www.mayonemaharajan.com/",
+      "sameAs": [
+        "https://www.mayonemaharajan.com/",
+        "https://www.mayonemaharajan.com/concepts/the-maha-principle",
+        "https://www.facebook.com/622592662",
+        "https://www.instagram.com/mayon_rajan"
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of California, San Diego"
       },
-      "datePublished": "2026-06-18",
-      "identifier": "https://doi.org/10.5281/zenodo.20746123",
-      "url": "https://doi.org/10.5281/zenodo.20746123",
-      "publisher": { "@type": "Organization", "name": "Zenodo" },
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "creativeWorkStatus": "Published"
+      "description": "Cultural strategist, author, and technology founder working at the intersection of cognitive science, applied cybernetics, and agentic systems."
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://themahaprinciple.com/framework.html",
+      "url": "https://themahaprinciple.com/framework.html",
+      "name": "The Maha Framework",
+      "isPartOf": {"@id": "https://themahaprinciple.com/#website"},
+      "about": {"@id": "https://themahaprinciple.com/#book"},
+      "description": "An evolving body of work investigating what governs the organization of complex adaptive systems, examined across scales from civilization to cognition.",
+      "author": {"@id": "https://themahaprinciple.com/#author"}
+    },
+    {
+      "@type": "CreativeWorkSeries",
+      "@id": "https://themahaprinciple.com/framework.html#series",
+      "name": "The Maha Framework",
+      "url": "https://themahaprinciple.com/framework.html",
+      "author": {"@id": "https://themahaprinciple.com/#author"},
+      "hasPart": [
+        {
+          "@type": "Book",
+          "@id": "https://themahaprinciple.com/#book",
+          "name": "The Maha Principle: The Architecture of Human Flourishing",
+          "url": "https://themahaprinciple.com/",
+          "datePublished": "2026-07-10",
+          "bookFormat": "https://schema.org/EBook"
+        },
+        {
+          "@type": "Book",
+          "name": "The Orbital Mind: The Astrophysics of the Self",
+          "creativeWorkStatus": "https://schema.org/InDevelopment"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://themahaprinciple.com/framework.html#mahaos",
+          "name": "Maha OS",
+          "applicationCategory": "HealthApplication",
+          "operatingSystem": "iOS, Android",
+          "url": "https://themahaprinciple.com/framework.html#mahaos",
+          "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "name": "The M·A·H·A Framework: An Integrative Architecture for Resisting Systemic Metabolic, Attentional, and Relational Extraction",
+          "author": {"@id": "https://themahaprinciple.com/#author"},
+          "datePublished": "2026-06-18",
+          "identifier": "https://doi.org/10.5281/zenodo.20746123",
+          "url": "https://doi.org/10.5281/zenodo.20746123",
+          "license": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://themahaprinciple.com/framework.html#breadcrumb",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://themahaprinciple.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Framework", "item": "https://themahaprinciple.com/framework.html"}
+      ]
     }
   ]
 }
@@ -469,6 +484,7 @@
     <span class="foot-brand">The Maha Framework</span>
     <nav class="foot-links" aria-label="Footer">
       <a href="/">The Book</a>
+      <a href="/framework.html">Framework</a>
       <a href="https://www.mayonemaharajan.com/" rel="noopener">The Author</a>
       <a href="https://www.amazon.com/dp/B0H62WLMT5" rel="noopener">Pre-order</a>
     </nav>
