@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://themahaprinciple.com/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -14,8 +14,13 @@
   </url>
   <url>
     <loc>https://themahaprinciple.com/framework.html</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://themahaprinciple.com/cover.jpg</image:loc>
+      <image:title>The Maha Framework — Books, Research, Tools</image:title>
+      <image:caption>Map of the research program including The Maha Principle book, Maha OS app, and Zenodo DOI 10.5281/zenodo.20746123</image:caption>
+    </image:image>
   </url>
 </urlset>
