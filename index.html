@@ -274,6 +274,13 @@
   .hero-figure figcaption{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--bone-dim);text-align:center;margin-top:18px}
   @media(max-width:860px){.hero .wrap{grid-template-columns:1fr;text-align:left}.hero-figure{order:-1}}
 
+  /* ---- READER RESPONSE ---- */
+  .reader-quote{border-bottom:1px solid var(--rule);padding-block:clamp(42px,6vw,72px)}
+  .reader-quote blockquote{max-width:860px;margin:0 auto;text-align:center}
+  .reader-quote q{display:block;font-family:var(--serif);font-size:clamp(27px,4vw,44px);font-style:italic;line-height:1.16;color:var(--bone)}
+  .reader-quote q::before,.reader-quote q::after{color:var(--gold)}
+  .reader-quote cite{display:block;margin-top:22px;font-family:var(--mono);font-size:11px;font-style:normal;letter-spacing:.14em;text-transform:uppercase;color:var(--bone-dim)}
+
   /* ---- SECTION SCAFFOLD ---- */
   section[id]{scroll-margin-top:80px}
   .band{border-bottom:1px solid var(--rule);padding-block:clamp(56px,8vw,96px)}
@@ -439,6 +446,16 @@
     </div>
   </section>
 
+  <!-- ===================== READER RESPONSE ===================== -->
+  <section class="reader-quote" aria-label="Reader response">
+    <div class="wrap">
+      <blockquote>
+        <q>A thoughtful, ambitious, and genuinely useful systems-level work.</q>
+        <cite>Amazon customer review &middot; July 2026</cite>
+      </blockquote>
+    </div>
+  </section>
+
   <!-- ===================== THE DIAGNOSIS ===================== -->
   <section id="diagnosis" class="band" aria-labelledby="diag-h">
     <div class="wrap">
@@ -547,6 +564,16 @@
       </div>
       <p style="max-width:62ch;color:var(--bone);font-size:18px;line-height:1.7">Mayone Maha Rajan is a writer and researcher working at the intersection of cognitive science, metabolic health, and systems thinking. He holds a degree in cognitive science from the University of California, San Diego. His work is shaped by a single question: why do the crises of modern life arrive together — and what would it take to reverse them?</p>
       <p style="max-width:62ch;color:var(--bone-dim);font-size:16px;line-height:1.7;margin-top:18px">He works in the open, holding his claims to a falsification-first standard — stating plainly what would prove an argument wrong, and citing as he goes. He writes from Colombo, Sri Lanka. <em>The Maha Principle</em> is his first book.</p>
+    </div>
+  </section>
+
+  <!-- ===================== READER RESPONSE II ===================== -->
+  <section class="reader-quote" aria-label="Reader response" style="border-top:1px solid var(--rule)">
+    <div class="wrap">
+      <blockquote>
+        <q>A compelling account of how biological health, cognitive sovereignty, personal meaning, and social life reinforce one another.</q>
+        <cite>Amazon customer review &middot; Verified Purchase &middot; July 2026</cite>
+      </blockquote>
     </div>
   </section>
 
