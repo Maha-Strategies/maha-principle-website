@@ -1,0 +1,3 @@
+/* Page-specific styles remain in the original static templates so the migration
+   preserves the current visual output while Next.js owns routing and builds. */
+html, body { margin: 0; }
