@@ -306,6 +306,12 @@
   .ledger .row p{color:var(--bone-dim);font-size:16px;max-width:60ch}
   @media(max-width:620px){.ledger .row{grid-template-columns:64px 1fr;gap:20px}}
 
+  /* book-to-practice companion */
+  .companion{border:1px solid var(--rule);background:linear-gradient(135deg,var(--ink-2),var(--evergreen));padding:clamp(28px,5vw,54px)}
+  .companion .label{margin-bottom:20px}
+  .companion h2{font-size:clamp(28px,4vw,42px);margin-bottom:14px;max-width:18ch}
+  .companion p{color:var(--bone-dim);font-size:17px;line-height:1.65;max-width:58ch;margin-bottom:26px}
+
   /* audits — bordered cards with checklist feel */
   .audit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
   .audit{border:1px solid var(--rule);border-radius:3px;padding:30px;background:linear-gradient(180deg,var(--ink-2),var(--ink))}
@@ -501,6 +507,20 @@
     </div>
   </section>
 
+  <!-- ===================== MAHA OS COMPANION ===================== -->
+  <section class="band" aria-labelledby="companion-h">
+    <div class="wrap">
+      <div class="companion">
+        <p class="label">The companion tool</p>
+        <h2 id="companion-h">Put the framework into daily practice.</h2>
+        <p>Maha OS is a private mobile companion for product-label scanning and self-directed routines. The book offers the framework; the app helps you make its questions part of everyday life.</p>
+        <a class="cta" href="https://www.maha-os.com/?utm_source=themahaprinciple.com&amp;utm_medium=referral&amp;utm_campaign=book_to_app">
+          Explore Maha OS <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- ===================== THE AUDITS ===================== -->
   <section id="audits" class="band" aria-labelledby="audit-h">
     <div class="wrap">
@@ -607,6 +627,7 @@
         <a href="https://www.amazon.com/dp/B0H62WLMT5" rel="noopener">Buy the Book</a>
         <a href="#diagnosis">The Book</a>
         <a href="/framework.html">The Program</a>
+        <a href="https://www.maha-os.com/?utm_source=themahaprinciple.com&amp;utm_medium=referral&amp;utm_campaign=book_to_app">Maha OS</a>
         <a href="#author">Author</a>
         <a href="/privacy">Privacy</a>
         <a href="mailto:mayone@mahastrategies.com">Contact</a>
